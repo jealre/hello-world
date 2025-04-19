@@ -1,0 +1,449 @@
+jar@jar-toshiba:~/Escritorio/python$ git config --global user.name
+jar@jar-toshiba:~/Escritorio/python$ git config --global user.jealre
+jar@jar-toshiba:~/Escritorio/python$ git config --global user.alonsoredondojesus@gmail.com
+jar@jar-toshiba:~/Escritorio/python$ mkdir /home/jar/project
+jar@jar-toshiba:~/Escritorio/python$ cd ..
+jar@jar-toshiba:~/Escritorio$ cd ..
+jar@jar-toshiba:~$ ls
+Descargas   Escritorio  Música      project  snap
+Documentos  Imágenes    Plantillas  Público  Vídeos
+jar@jar-toshiba:~$ mv project/ gitproject
+jar@jar-toshiba:~$ ls
+Descargas   Escritorio  Imágenes  Plantillas  snap
+Documentos  gitproject  Música    Público     Vídeos
+jar@jar-toshiba:~$ cd gitproject/
+jar@jar-toshiba:~/gitproject$ ls
+jar@jar-toshiba:~/gitproject$ git init
+ayuda: Usando 'master' como el nombre de la rama inicial. Este nombre de rama predeterminado
+ayuda: está sujeto a cambios. Para configurar el nombre de la rama inicial para usar en todos
+ayuda: de sus nuevos repositorios, reprimiendo esta advertencia, llama a:
+ayuda: 
+ayuda:  git config --global init.defaultBranch <nombre>
+ayuda: 
+ayuda: Los nombres comúnmente elegidos en lugar de 'master' son 'main', 'trunk' y
+ayuda: 'development'. Se puede cambiar el nombre de la rama recién creada mediante este comando:
+ayuda: 
+ayuda:  git branch -m <nombre>
+Inicializado repositorio Git vacío en /home/jar/gitproject/.git/
+jar@jar-toshiba:~/gitproject$ ls
+jar@jar-toshiba:~/gitproject$ ls -a
+.  ..  .git
+jar@jar-toshiba:~/gitproject$ ls -a
+.  ..  .git  index.html
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+
+No hay commits todavía
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        index.html
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+jar@jar-toshiba:~/gitproject$ git add index.html
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+        nuevos archivos: index.html
+
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+        nuevos archivos: index.html
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     index.html
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        bluestyle.css
+        hello-world
+
+jar@jar-toshiba:~/gitproject$ git add --all
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+
+No hay commits todavía
+
+Cambios a ser confirmados:
+  (usa "git rm --cached <archivo>..." para sacar del área de stage)
+        nuevos archivos: bluestyle.css
+        nuevos archivos: hello-world
+        nuevos archivos: index.html
+
+jar@jar-toshiba:~/gitproject$ git commit -m "First release of Hello World!"
+Identidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'jar@jar-toshiba.(none)')
+jar@jar-toshiba:~/gitproject$ git config --global user.jealre
+jar@jar-toshiba:~/gitproject$ git config --global user.alonsoredondojesus@gmail.com
+jar@jar-toshiba:~/gitproject$ git commit -m "First release of Hello World!"
+Identidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'jar@jar-toshiba.(none)')
+jar@jar-toshiba:~/gitproject$ git config user.jealre
+jar@jar-toshiba:~/gitproject$ git config user.alonsoredondojesus@gmail.com
+jar@jar-toshiba:~/gitproject$ git commit -m "First release of Hello World!"
+Identidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'jar@jar-toshiba.(none)')
+jar@jar-toshiba:~/gitproject$ git user
+git: 'user' no es un comando de git. Mira 'git --help'.
+
+El comando más similar es
+        subtree
+jar@jar-toshiba:~/gitproject$ git commit -m "First release of Hello World!"
+Identidad del autor desconocido
+
+*** Por favor cuéntame quién eres.
+
+Ejecuta
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Tu Nombre"
+
+para configurar la identidad por defecto de tu cuenta.
+Omite --global para configurar tu identidad solo en este repositorio.
+
+fatal: no es posible auto-detectar la dirección de correo (se obtuvo 'jar@jar-toshiba.(none)')
+jar@jar-toshiba:~/gitproject$ git config --global user.email "alonsoredondojesus@gmail.com"
+jar@jar-toshiba:~/gitproject$ git config --global user.name "jealre"
+jar@jar-toshiba:~/gitproject$ git commit -m "First release of Hello World!"
+[master (commit-raíz) 89e68ed] First release of Hello World!
+ 3 files changed, 28 insertions(+)
+ create mode 100644 bluestyle.css
+ create mode 100644 hello-world
+ create mode 100644 index.html
+jar@jar-toshiba:~/gitproject$ git --status
+opción --status desconocida
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+nada para hacer commit, el árbol de trabajo está limpio
+jar@jar-toshiba:~/gitproject$ ls -a
+.  ..  bluestyle.css  .git  hello-world  index.html
+jar@jar-toshiba:~/gitproject$ git status --short
+ M index.html
+jar@jar-toshiba:~/gitproject$ git commit -a -m "Updated index.html with a new line"
+[master c8bd7f2] Updated index.html with a new line
+ 1 file changed, 1 insertion(+)
+jar@jar-toshiba:~/gitproject$ git log
+commit c8bd7f2c60c4c53ded9a5da5501d5c582a820fa8 (HEAD -> master)
+Author: jealre <alonsoredondojesus@gmail.com>
+Date:   Mon Apr 14 18:38:55 2025 +0200
+
+    Updated index.html with a new line
+
+commit 89e68ed98c47347d5490cf5e14b4e46bb161d639
+Author: jealre <alonsoredondojesus@gmail.com>
+Date:   Mon Apr 14 18:30:01 2025 +0200
+
+    First release of Hello World!
+jar@jar-toshiba:~/gitproject$ git branch hello-world-images
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+nada para hacer commit, el árbol de trabajo está limpio
+jar@jar-toshiba:~/gitproject$ ls -a
+.  ..  bluestyle.css  .git  hello-world  index.html
+jar@jar-toshiba:~/gitproject$ git branch
+  hello-world-images
+* master
+jar@jar-toshiba:~/gitproject$ git checkout hello-world-images
+Cambiado a rama 'hello-world-images'
+jar@jar-toshiba:~/gitproject$ git branch
+* hello-world-images
+  master
+jar@jar-toshiba:~/gitproject$ git status
+En la rama hello-world-images
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     index.html
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+jar@jar-toshiba:~/gitproject$ git add --all
+jar@jar-toshiba:~/gitproject$ git status
+En la rama hello-world-images
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        modificados:     index.html
+
+jar@jar-toshiba:~/gitproject$ ls
+bluestyle.css  hello-world  img_hello_world.jpg  index.html
+jar@jar-toshiba:~/gitproject$ git add -all
+error: ¿quisiste decir `--all` (con dos guiones)?
+jar@jar-toshiba:~/gitproject$ git add --all
+jar@jar-toshiba:~/gitproject$ git status
+En la rama hello-world-images
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        nuevos archivos: img_hello_world.jpg
+        modificados:     index.html
+
+jar@jar-toshiba:~/gitproject$ git commit -m "Added image to Hello World"
+[hello-world-images 6b42d5c] Added image to Hello World
+ 2 files changed, 3 insertions(+)
+ create mode 100644 img_hello_world.jpg
+jar@jar-toshiba:~/gitproject$ git status
+En la rama hello-world-images
+nada para hacer commit, el árbol de trabajo está limpio
+jar@jar-toshiba:~/gitproject$ ls
+bluestyle.css  hello-world  img_hello_world.jpg  index.html
+jar@jar-toshiba:~/gitproject$ mv hello-world README.md
+jar@jar-toshiba:~/gitproject$ ls
+bluestyle.css  img_hello_world.jpg  index.html  README.md
+jar@jar-toshiba:~/gitproject$ git branch
+* hello-world-images
+  master
+jar@jar-toshiba:~/gitproject$ git checkout master
+D       hello-world
+Cambiado a rama 'master'
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios no rastreados para el commit:
+  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        borrados:        hello-world
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        README.md
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+jar@jar-toshiba:~/gitproject$ git add README.md 
+jar@jar-toshiba:~/gitproject$ git sta
+stage    stash    status   
+jar@jar-toshiba:~/gitproject$ git status 
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        nuevos archivos: README.md
+
+Cambios no rastreados para el commit:
+  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        borrados:        hello-world
+
+jar@jar-toshiba:~/gitproject$ git commit 
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-toshiba:~/gitproject$ git commit README.md 
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-toshiba:~/gitproject$ git add --all
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        renombrados:     hello-world -> README.md
+
+jar@jar-toshiba:~/gitproject$ git commit README.md 
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-toshiba:~/gitproject$ git commit 
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-toshiba:~/gitproject$ git commit -a README.md 
+fatal: paths 'README.md ...' con -a no tiene sentido
+jar@jar-toshiba:~/gitproject$ git commit 
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-tos
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        renombrados:     hello-world -> README.md
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     index.html
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        hello-world
+        resumen
+
+jar@jar-toshiba:~/gitproject$ git switch
+fatal: falta branch o commit como argumento
+jar@jar-toshiba:~/gitproject$ git checkout 
+A       README.md
+D       hello-world
+M       index.html
+jar@jar-toshiba:~/gitproject$ git branch
+  hello-world-images
+* master
+jar@jar-toshiba:~/gitproject$ git checkout hello-world-images
+error: Los cambios locales de los siguientes archivos serán sobrescritos por checkout:
+        index.html
+Por favor realice un commit con los cambios o un stash antes de cambiar ramas.
+Abortando
+jar@jar-toshiba:~/gitproject$ git master
+git: 'master' no es un comando de git. Mira 'git --help'.
+
+El comando más similar es
+        restore
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        renombrados:     hello-world -> README.md
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git restore <archivo>..." para descartar los cambios en el directorio de trabajo)
+        modificados:     index.html
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        hello-world
+        resumen
+
+jar@jar-toshiba:~/gitproject$ git restore index.html 
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        renombrados:     hello-world -> README.md
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        hello-world
+        resumen
+
+jar@jar-toshiba:~/gitproject$ git commit
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        renombrados:     hello-world -> README.md
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        hello-world
+        resumen
+
+jar@jar-toshiba:~/gitproject$ git commit README.md 
+Abortando commit debido que el mensaje está en blanco.
+jar@jar-toshiba:~/gitproject$ git add README.md 
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Cambios a ser confirmados:
+  (usa "git restore --staged <archivo>..." para sacar del área de stage)
+        renombrados:     hello-world -> README.md
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        hello-world
+        resumen
+
+jar@jar-toshiba:~/gitproject$ git commit -m "Corregido error en nombre hello-world/README.md
+> "
+[master d448f92] Corregido error en nombre hello-world/README.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename hello-world => README.md (100%)
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        hello-world
+        resumen
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+jar@jar-toshiba:~/gitproject$ git branch
+  hello-world-images
+* master
+jar@jar-toshiba:~/gitproject$ git checkout hello-world-images 
+error: Los siguientes archivos sin seguimiento en el árbol de trabajo serán sobrescritos al actualizar el árbol de trabajo:
+        hello-world
+Por favor, muévelos o elimínalos antes de cambiar de rama.
+Abortando
+jar@jar-toshiba:~/gitproject$ rm hello-world 
+jar@jar-toshiba:~/gitproject$ git status
+En la rama master
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        resumen
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+jar@jar-toshiba:~/gitproject$ git checkout hello-world-images 
+Cambiado a rama 'hello-world-images'
+jar@jar-toshiba:~/gitproject$ git status 
+En la rama hello-world-images
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        resumen
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+jar@jar-toshiba:~/gitproject$ git status
+En la rama hello-world-images
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        resumen
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+jar@jar-toshiba:~/gitproject$ ls
+bluestyle.css  img_hello_world.jpg  resumen
+hello-world    index.html
+jar@jar-toshiba:~/gitproject$ git checkout master
+Cambiado a rama 'master'
+jar@jar-toshiba:~/gitproject$ ls
+bluestyle.css  index.html  README.md  resumen
+jar@jar-toshiba:~/gitproject$ git checkout -b emergency-fix
+Cambiado a nueva rama 'emergency-fix'
+jar@jar-toshiba:~/gitproject$ git branch
+* emergency-fix
+  hello-world-images
+  master
+jar@jar-toshiba:~/gitproject$ git status
+En la rama emergency-fix
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que será confirmado)
+        resumen
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+jar@jar-toshiba:~/gitproject$ ls -a
+.  ..  bluestyle.css  .git  index.html  README.md  resumen
+jar@jar-toshiba:~/gitproject$ 
+
